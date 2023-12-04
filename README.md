@@ -21,3 +21,7 @@ Ce script simplifie la configuration d'un serveur DHCP sur un hôte Proxmox VE. 
 
     ./config.sh
     
+## Crédits
+
+- [Original Author's name] https://github.com/tteck - Author of the Script to remove dependencies for Proxmox VE
+- [Original Deposit] https://github.com/tteck/Proxmox/tree/main - Original Deposit for the script
