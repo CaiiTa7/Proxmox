@@ -1,70 +1,14 @@
-<div align="center">
-<img src="https://logovectorseek.com/wp-content/uploads/2021/10/proxmox-server-solutions-gmbh-logo-vector.png" align="center" style="width: 100%" />
-</div>  
-  
+![Proxmox](https://logovectorseek.com/wp-content/uploads/2021/10/proxmox-server-solutions-gmbh-logo-vector.png)
 
-<br/>  
+# 👨‍💻 Developed in:
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
+# 🗒️ Descritpion:
 
-## My Skill Set  
-<table><tr><td valign="top" width="33%">
+## DHCP Server Configuration Script for Proxmox VE (English)
 
+This script facilitates the configuration of a DHCP server on a Proxmox VE host. It provides a guided setup process for defining network interfaces, enabling IP forwarding, and configuring the DHCP server. The user is prompted to input details such as network settings, DNS server, domain name, and has the option to assign static IP addresses to specific machines. Additionally, the script allows for the removal of enterprise dependencies.
 
+## Script de Configuration du Serveur DHCP pour Proxmox VE (Français)
 
-</td><td valign="top" width="33%">
-
-
-
-</td><td valign="top" width="33%">
-
-
-
-### Programming language   
-<div align="center">  
-<a href="https://www.gnu.org/software/bash/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="50" /></a>  
-</div>
-
-<br/>  
-
-
-## Connect with me  
-<div align="center">
-<a href="https://github.com/CaiiTa7" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>  
-</div>  
-  
-
-<br/>  
-
-
-## Github Stats  
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=CaiiTa7&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
-
-<br/>  
-
-
-## Recent Blog Posts  
-  
-
-<br/>  
-
-  
-
-<br/>  
-
-<div align="center">
-<img src="https://komarev.com/ghpvc/?username=CaiiTa7&&style=flat-square" align="center" />
-</div>  
-  
-
-<br/>  
-
-<div align="center"></div>  
-
-<br/>  
-
-
-<br />
-
-----
+Ce script simplifie la configuration d'un serveur DHCP sur un hôte Proxmox VE. Il propose un processus de configuration guidé pour définir les interfaces réseau, activer le transfert (forward) IP, et configurer le serveur DHCP. L'utilisateur est invité à saisir des détails tels que les paramètres réseau, le serveur DNS, le nom de domaine, et a la possibilité d'assigner des adresses IP statiques à des machines spécifiques. De plus, le script permet la suppression des dépendances d'entreprise.
