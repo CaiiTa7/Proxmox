@@ -12,3 +12,12 @@ This script facilitates the configuration of a DHCP server on a Proxmox VE host.
 ## Script de Configuration du Serveur DHCP pour Proxmox VE (Français)
 
 Ce script simplifie la configuration d'un serveur DHCP sur un hôte Proxmox VE. Il propose un processus de configuration guidé pour définir les interfaces réseau, activer le transfert (forward) IP, et configurer le serveur DHCP. L'utilisateur est invité à saisir des détails tels que les paramètres réseau, le serveur DNS, le nom de domaine, et a la possibilité d'assigner des adresses IP statiques à des machines spécifiques. De plus, le script permet la suppression des dépendances d'entreprise.
+
+# ▶ How to use:
+## No sudo mode and in the current folder
+
+    sudo ./config.sh
+## Sudo mode and in the current folder
+
+    ./config.sh
+    
