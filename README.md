@@ -92,12 +92,32 @@ This automated Bash script streamlines advanced network configuration on a Proxm
 # ▶ How to use:
 ## No sudo mode and in the current folder
 
+    sudo chmod +x config.sh
     sudo ./config.sh
 ## Sudo mode and in the current folder
 
+    chmod +x config.sh
     ./config.sh
-    
-## Crédits
 
+## IF port 22 opened for a machine
+### On terminal (For the exemple PowerShell)
+1. user = The user you want to be connected (User of the remote machine).
+2. IP = IP of vmbr0, the interface exposed on the internet.
+3. -p 222 = To precise the port (of the first machine in this exemple, if it's the second machine the -p will be 223 etc).
+
+```bash
+  ssh -p 222 user@IP
+```
+Enter the password of the remote user
+
+And that's it ! 
+
+## Authors
+- [@CaiiTa7](https://www.github.com/CaiiTa7)
+
+## Crédits
 - [Original Author's name] https://github.com/tteck - Author of the Script to remove dependencies for Proxmox VE
 - [Original Deposit] https://github.com/tteck/Proxmox/tree/main - Original Deposit for the script
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
