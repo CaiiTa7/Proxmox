@@ -28,7 +28,7 @@ Ce script Bash automatisé facilite la configuration avancée du réseau sur un 
 
 4. **Attribution d'Adresses IP Statiques :**
    - Permet à l'utilisateur d'attribuer des adresses IP statiques aux machines.
-   - Utilise la table ARP pour récupérer les adresses MAC des machines disponibles.
+   - Récupère les adresses MAC des machines disponibles.
 
 5. **Ouverture de Ports Spécifiques :**
    - Demande à l'utilisateur s'il souhaite ouvrir des ports pour une machine donnée.
@@ -71,7 +71,7 @@ This automated Bash script streamlines advanced network configuration on a Proxm
 
 4. **Assignment of Static IP Addresses:**
    - Allows the user to assign static IP addresses to machines.
-   - Utilizes the ARP table to retrieve MAC addresses of available machines.
+   - Retrieve MAC addresses of available machines.
 
 5. **Opening Specific Ports:**
    - Asks the user if they want to open ports for a given machine.
