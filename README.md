@@ -18,7 +18,7 @@ Ce script Bash automatisé facilite la configuration avancée du réseau sur un 
    - Utilise un script externe pour effectuer cette opération.
 
 2. **Configuration du Transfert IP :**
-   - Demande à l'utilisateur d'entrer l'adresse IP du réseau avec le masque (par exemple : 192.168.10.0/24).
+   - Demande à l'utilisateur d'entrer l'adresse IP du réseau avec le masque (par example : 192.168.10.0/24).
    - Active le transfert IP en ajoutant des règles iptables pour le masquerading.
 
 3. **Configuration du Serveur DHCP :**
@@ -100,10 +100,10 @@ This automated Bash script streamlines advanced network configuration on a Proxm
     ./config.sh
 
 ## IF port 22 opened for a machine
-### On terminal (For the exemple PowerShell)
+### On terminal (For the example PowerShell)
 1. user = The user you want to be connected (User of the remote machine).
 2. IP = IP of vmbr0, the interface exposed on the internet.
-3. -p 222 = To precise the port (of the first machine in this exemple, if it's the second machine the -p will be 223 etc).
+3. -p 222 = To precise the port (of the first machine in this example, if it's the second machine the -p will be 223 etc).
 
 ```bash
   ssh -p 222 user@IP
