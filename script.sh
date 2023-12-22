@@ -4,6 +4,40 @@
 # Henallux MASI
 # License: MIT License
 
+header_info() {
+  clear
+  cat <<"EOF"
+
+
+██████  ██    ██        ██        ██████  ██   ██  ██████ ██████       ██████  ██████  ███    ██ ███████ ██  ██████            
+██   ██ ██    ██        ██        ██   ██ ██   ██ ██      ██   ██     ██      ██    ██ ████   ██ ██      ██ ██                 
+██████  ██    ██     ████████     ██   ██ ███████ ██      ██████      ██      ██    ██ ██ ██  ██ █████   ██ ██   ███           
+██       ██  ██      ██  ██       ██   ██ ██   ██ ██      ██          ██      ██    ██ ██  ██ ██ ██      ██ ██    ██           
+██        ████       ██████       ██████  ██   ██  ██████ ██           ██████  ██████  ██   ████ ██      ██  ██████            
+                                                                                                                               
+                                                                                                                               
+███    ███  █████  ██████  ███████     ██████  ██    ██     ███████ ████████ ██    ██ ██   ██  ██████  ███████ ██   ██ ██   ██ 
+████  ████ ██   ██ ██   ██ ██          ██   ██  ██  ██      ██         ██    ██    ██ ██   ██ ██            ██ ██   ██ ██   ██ 
+██ ████ ██ ███████ ██   ██ █████       ██████    ████       █████      ██    ██    ██ ███████ ███████      ██  ███████ ███████ 
+██  ██  ██ ██   ██ ██   ██ ██          ██   ██    ██        ██         ██    ██    ██      ██ ██    ██    ██        ██      ██ 
+██      ██ ██   ██ ██████  ███████     ██████     ██        ███████    ██     ██████       ██  ██████     ██        ██      ██ 
+                                                                                                       
+Warning :
+
+1) The vmbr1 network interface must be configured before running this script otherwise it will fail.
+
+2) To assign a static IP address to a machine, the machine must be installed and running.
+
+2.1) You must also know the MAC address of the machine. You can find it in the Proxmox VE web interface or with "ip a" command (on the machine).
+
+3) If you want to open the port 22 for a machine the first one will have the specific port 222 the second machine will have the port 223 ...
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+EOF
+}
+
+header_info
 function remove_enterprise_dependencies() {
     read -p "Do you want to remove enterprise dependencies? (y/n): " remove_enterprise
     if [ "$remove_enterprise" = "y" ]; then
