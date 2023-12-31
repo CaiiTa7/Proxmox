@@ -638,7 +638,7 @@ function restart_dhcp_server() {
 
 }
 
-########################################
+
 function remove_dhcp_server() {
     
     find_network_with_netmask
@@ -724,7 +724,9 @@ function add_vmbr_interface() {
     fi
 
     # Move the modified file back to /etc/network/interfaces
-    mv "$tmp_file" /etc/network/interfaces
+    mv /etc/network/interfaces /etc/network/interfaces.backup
+    cp $tmp_file /etc/network/interfaces
+    chmod 0644 /etc/network/interfaces
 
     echo "Bridge Interface $vmbr_interface added with IP address and netmask $ip_address"
 }
@@ -768,29 +770,29 @@ function select_task() {
                 ;;
             "Configure DHCP server")
                 configure_dhcp
-	            start_dhcp_server
-		        ;;
+	        start_dhcp_server
+		;;
             "Add other DHCP server")
-		        add_dhcp_server
-		        restart_dhcp_server		
-		        ;;
+		add_dhcp_server
+		restart_dhcp_server		
+		;;
             "Remove DHCP server")
-		        remove_dhcp_server
-		        restart_dhcp_server		
-		        ;;
+		remove_dhcp_server
+		restart_dhcp_server		
+		;;
             "List DHCP configuration")
-		        list_config_dhcp		
-		        ;;
-	        "Restart DHCP server")
-		        restart_dhcp_server
-		        ;;
+		list_config_dhcp		
+		;;
+	    "Restart DHCP server")
+		restart_dhcp_server
+		;;
             "Configure static IP")
                 assign_static_ip
                 restart_dhcp_server
                 ;;
             "Remove static IP")
                 remove_static_ip
-		        restart_dhcp_server
+		restart_dhcp_server
                 ;;
             "Assign ports")
                 assign_ports
@@ -801,7 +803,7 @@ function select_task() {
             "Exit")
                 exit_script
                 ;;
-	        "Reboot")
+	    "Reboot")
                 reboot_script
                 ;;
             "Show Menu")
